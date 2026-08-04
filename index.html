@@ -193,60 +193,18 @@
   /* Hero visual */
   .hero-visual {
     position: relative;
-    aspect-ratio: 1 / 1;
-    max-width: 480px;
+    max-width: 520px;
     justify-self: center;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  .logo-placeholder {
-    width: 100%; height: 100%;
-    background:
-      radial-gradient(circle at 30% 30%, rgba(93, 213, 232, 0.3), transparent 50%),
-      linear-gradient(135deg, var(--ocean), var(--deep));
-    border-radius: 20px;
-    display: flex; align-items: center; justify-content: center;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
-    position: relative;
-    overflow: hidden;
-  }
-  .logo-placeholder::before {
-    content: '';
-    position: absolute;
-    bottom: -20px; left: -20px; right: -20px;
-    height: 60px;
-    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60'><path d='M0,30 Q150,60 300,30 T600,30 T900,30 T1200,30 V60 H0 Z' fill='%235DD5E8' opacity='0.15'/></svg>") repeat-x;
-    background-size: 1200px 60px;
-  }
-  .logo-text {
-    font-family: 'Fraunces', serif;
-    font-weight: 900;
-    color: var(--white);
-    position: relative;
-  }
-  .logo-text .l1 { font-size: 2rem; letter-spacing: 0.05em; color: var(--wave); display: block; }
-  .logo-text .l2 { font-size: 3.5rem; line-height: 0.95; letter-spacing: -0.02em; display: block; margin-top: 0.25rem; }
-  .logo-text .l3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 0.7rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--foam);
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    border-top: 1px solid rgba(184, 236, 243, 0.2);
-    display: block;
-  }
-  .logo-note {
-    position: absolute;
-    bottom: -2.5rem; left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.4);
-    font-style: italic;
-    white-space: nowrap;
+  .hero-logo {
+    width: 100%;
+    height: auto;
+    max-width: 520px;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   }
 
   /* ─── PROBLEM SECTION ─── */
@@ -1049,14 +1007,7 @@
       <div class="trust-line">Brought to you by Evidence Based Resources and Curriculum</div>
     </div>
     <div class="hero-visual">
-      <div class="logo-placeholder">
-        <div class="logo-text">
-          <span class="l1">MATH FACT</span>
-          <span class="l2">EXPEDITION</span>
-          <span class="l3">Math Fact Fluency</span>
-        </div>
-      </div>
-      <div class="logo-note">↑ replace with your uploaded logo</div>
+      <img src="/logo.png" alt="Math Fact Expedition — Math Fact Fluency" class="hero-logo" />
     </div>
   </div>
 </section>
