@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service · Math Fact Expedition</title>
+<meta name="description" content="The terms that govern use of Math Fact Expedition, including plans, founding access, and the five-year guarantee.">
+<link rel="icon" href="/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --abyss: #061529;
+    --deep: #0A2447;
+    --ocean: #1E4A8C;
+    --wave: #5DD5E8;
+    --wave-dim: #3FB5C8;
+    --foam: #B8ECF3;
+    --parchment: #F5E6D3;
+    --parchment-dark: #E5D2B8;
+    --gold: #FFB84D;
+    --gold-dim: #E09A2E;
+    --ink: #2A1B0E;
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background: var(--abyss);
+    color: var(--white);
+    line-height: 1.6;
+  }
+  .container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+
+  /* Nav (mirrors index.html) */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(6,21,41,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(93,213,232,0.12);
+  }
+  .nav-inner {
+    max-width: 1120px; margin: 0 auto; padding: 1rem 1.5rem;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 0.75rem;
+    font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.15rem;
+    color: var(--white); text-decoration: none; letter-spacing: -0.01em;
+  }
+  .brand-mark {
+    width: 36px; height: 36px; border-radius: 10px;
+    background: linear-gradient(135deg, var(--wave), var(--ocean));
+    display: grid; place-items: center;
+    font-family: 'Fraunces', serif; font-weight: 900; font-size: 1.1rem;
+    color: var(--abyss);
+  }
+  .nav-links { display: flex; gap: 2rem; align-items: center; font-size: 0.95rem; }
+  .nav-links a { color: rgba(255,255,255,0.75); text-decoration: none; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--wave); }
+  .nav-cta {
+    background: var(--wave); color: var(--abyss) !important;
+    padding: 0.55rem 1.1rem; border-radius: 999px; font-weight: 600;
+  }
+  .nav-cta:hover { background: var(--foam); }
+  @media (max-width: 720px) { .nav-links a:not(.nav-cta) { display: none; } }
+
+  /* Legal page layout */
+  .legal-hero {
+    padding: 4.5rem 0 2.5rem;
+    background:
+      radial-gradient(ellipse 60% 50% at 20% 0%, rgba(30,74,140,0.45), transparent 60%),
+      var(--abyss);
+    border-bottom: 1px solid rgba(93,213,232,0.12);
+  }
+  .eyebrow {
+    font-family: 'Inter', sans-serif; font-weight: 600; font-size: 0.75rem;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--wave);
+    margin-bottom: 1rem;
+  }
+  .legal-hero h1 {
+    font-family: 'Fraunces', serif; font-weight: 800; font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 0.75rem;
+  }
+  .legal-meta { color: rgba(255,255,255,0.55); font-size: 0.9rem; }
+
+  .legal-body {
+    background: var(--white);
+    color: var(--ink);
+    padding: 3.5rem 0 5rem;
+  }
+  .legal-content { max-width: 780px; margin: 0 auto; padding: 0 1.5rem; }
+  .legal-content h2 {
+    font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.6rem;
+    letter-spacing: -0.015em; color: var(--deep);
+    margin: 2.75rem 0 1rem; padding-top: 1.25rem;
+    border-top: 2px solid var(--foam);
+  }
+  .legal-content h2:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  .legal-content h3 {
+    font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1.05rem;
+    color: var(--ocean); margin: 1.75rem 0 0.6rem;
+  }
+  .legal-content p { margin: 0 0 1rem; font-size: 1rem; }
+  .legal-content ul, .legal-content ol { margin: 0 0 1.2rem 1.5rem; }
+  .legal-content li { margin-bottom: 0.45rem; }
+  .legal-content strong { color: var(--deep); font-weight: 600; }
+  .legal-content a { color: var(--ocean); text-decoration: underline; text-underline-offset: 2px; }
+  .legal-content a:hover { color: var(--wave-dim); }
+  .legal-content hr { border: none; height: 0; margin: 0; }
+  .legal-content table {
+    width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.93rem;
+  }
+  .legal-content th {
+    text-align: left; background: var(--deep); color: var(--white);
+    padding: 0.65rem 0.8rem; font-weight: 600; font-size: 0.85rem;
+    letter-spacing: 0.02em;
+  }
+  .legal-content td {
+    padding: 0.65rem 0.8rem; border-bottom: 1px solid #E3EDF3; vertical-align: top;
+  }
+  .legal-content tr:nth-child(even) td { background: #F3FAFC; }
+  .legal-content .summary {
+    background: #E8F7FA; border-left: 4px solid var(--wave);
+    padding: 1.25rem 1.5rem; border-radius: 0 12px 12px 0; margin: 0 0 1.5rem;
+  }
+  .legal-content .summary ul { margin-bottom: 0; }
+  .legal-content .contact-block {
+    background: var(--parchment); padding: 1.5rem; border-radius: 12px;
+    line-height: 1.8; margin-top: 1rem;
+  }
+  .legal-content .contact-block p { margin: 0; }
+  .legal-content .related {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 2px solid var(--foam);
+    font-size: 0.95rem; color: #5A6B85;
+  }
+
+  /* Footer (mirrors index.html) */
+  footer {
+    background: var(--abyss); padding: 3.5rem 0 2rem;
+    border-top: 1px solid rgba(93,213,232,0.12);
+    color: rgba(255,255,255,0.75);
+  }
+  .footer-inner {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 2rem; flex-wrap: wrap; margin-bottom: 2.5rem;
+  }
+  .footer-brand { font-family: 'Fraunces', serif; font-weight: 700; font-size: 1.2rem; color: var(--white); }
+  .footer-tag { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-top: 0.5rem; }
+  .footer-links { display: flex; gap: 2rem; font-size: 0.85rem; flex-wrap: wrap; }
+  .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; }
+  .footer-links a:hover { color: var(--wave); }
+  .footer-bottom {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.8rem; color: rgba(255,255,255,0.4);
+  }
+  .footer-bottom a { color: rgba(255,255,255,0.55); text-decoration: none; }
+  .footer-bottom a:hover { color: var(--wave); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="brand">
+      <div class="brand-mark">M</div>
+      Math Fact Expedition
+    </a>
+    <div class="nav-links">
+      <a href="/#how">How it works</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#log" class="nav-cta">Founding Access</a>
+    </div>
+  </div>
+</nav>
+
+<section class="legal-hero">
+  <div class="container">
+    <div class="eyebrow">Legal · Agreement</div>
+    <h1>Terms of Service</h1>
+    <div class="legal-meta">Effective September 5, 2026 · Last updated September 5, 2026</div>
+  </div>
+</section>
+
+<section class="legal-body">
+  <div class="legal-content">
+<p>These Terms of Service ("Terms") are an agreement between you and Advant Education LLC, a New Mexico limited liability company doing business as Math Fact Expedition ("Advant Education," "we," "us," or "our"). They govern your use of the Math Fact Expedition website (mathfactexpedition.com) and web application (together, the "Service").</p>
+<p>By creating an account, making a purchase, or using the Service, you agree to these Terms and to our Privacy Policy, which is incorporated by reference. If you don't agree, don't use the Service.</p>
+<hr />
+<h2>1. Who can agree to these Terms</h2>
+<p>You must be <strong>at least 18 years old</strong> to create an account, make a purchase, or agree to these Terms.</p>
+<p><strong>Children use the Service only through a profile created and controlled by an adult.</strong> Children do not create accounts and do not agree to these Terms. The adult who creates the account is responsible for the children who use it.</p>
+<p>If you are creating an account on behalf of a school, district, or other organization, you represent that you have authority to bind that organization to these Terms, and "you" includes the organization.</p>
+<hr />
+<h2>2. Accounts and student profiles</h2>
+<p><strong>Adult accounts.</strong> You will create an account with your name, email address, and a password. Keep your password confidential. You are responsible for everything that happens under your account.</p>
+<p><strong>Student profiles.</strong> You may add student profiles to your account up to your plan's seat limit (Section 3). Each profile includes a first name (a nickname or initials are fine), an avatar, and an optional PIN. You represent that you are the parent or legal guardian of each student you add, <strong>or</strong> that you are an educator authorized by your school to add that student.</p>
+<p><strong>Group codes.</strong> Your account has a group code that students use to sign in. Anyone who enters your group code will see the first names and avatars of the students in your group. Treat your group code with the same care as a classroom door code: share it only with your students, and regenerate it from your dashboard if it spreads further than intended. We recommend turning on PINs for shared devices.</p>
+<p><strong>Accuracy.</strong> Keep your account information accurate and current. We send progress reports, receipts, and security notices to the email on file.</p>
+<hr />
+<h2>3. Plans, seats, and pricing</h2>
+<p>We offer the following plans. Prices are in U.S. dollars. Applicable sales tax is calculated and added at checkout.</p>
+<table>
+<thead>
+<tr>
+<th>Plan</th>
+<th>Price</th>
+<th>Student seats</th>
+<th>Term</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Family Plan</strong></td>
+<td>$29 per year</td>
+<td>Up to 4</td>
+<td>Annual subscription, auto-renews</td>
+</tr>
+<tr>
+<td><strong>Classroom Plan</strong></td>
+<td>$49 per year</td>
+<td>Up to 150</td>
+<td>Annual subscription, auto-renews</td>
+</tr>
+<tr>
+<td><strong>Founding Family</strong></td>
+<td>$49 one-time</td>
+<td>Up to 4</td>
+<td>Lifetime (see Section 4)</td>
+</tr>
+<tr>
+<td><strong>Founding Educator</strong></td>
+<td>$79 one-time</td>
+<td>Up to 135</td>
+<td>Lifetime (see Section 4)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Seats.</strong> A "seat" is one student profile. You may delete a profile and reuse its seat. Seats are for students you personally teach or parent; they are not for resale, sublicense, or sharing across multiple classrooms, schools, or families.</p>
+<p><strong>Subscriptions.</strong> Annual plans renew automatically at the then-current price unless you cancel before the renewal date. We will email you before each renewal. You can cancel any time from your dashboard; cancellation takes effect at the end of the current term, and you keep access until then. <strong>We do not prorate or refund partial terms.</strong></p>
+<p><strong>Free trials.</strong> If we offer a free trial, you'll be told the trial length and price at signup. You may cancel any time during the trial and will not be charged. If you don't cancel, the subscription begins automatically when the trial ends.</p>
+<p><strong>Price changes.</strong> We may change subscription prices for future terms. We'll give at least 30 days' notice by email before a price change affects your renewal. Founding plans are not subject to price changes (Section 4).</p>
+<p><strong>Payments.</strong> Payments are processed by Stripe. By purchasing, you agree to Stripe's terms. We don't store your full card number. If a payment fails, we may suspend the account until it's resolved.</p>
+<p><strong>Founding plan availability.</strong> Founding plans are limited in number. We may close or modify founding plans for new purchasers at any time; this doesn't affect anyone who has already purchased.</p>
+<hr />
+<h2>4. Founding plans and what "lifetime" means</h2>
+<p>Founding Family and Founding Educator plans are one-time purchases that give you access to the Service for as long as we operate it, with a minimum guarantee. Specifically:</p>
+<p><strong>Five-year guarantee.</strong> We guarantee that your founding plan will remain active for <strong>at least five (5) years from your purchase date.</strong> If we permanently discontinue the Service before your five years are up, we will refund a prorated portion of your founding purchase price, calculated as the purchase price multiplied by the number of full months remaining in the five-year period, divided by sixty. For example, a $79 purchase discontinued after 24 months would be refunded $79 × 36/60 = $47.40.</p>
+<p><strong>After five years.</strong> Your plan continues at no additional charge for as long as we operate the Service. We may eventually retire the Service; if we do after your five-year guarantee period, we'll give at least 90 days' notice and make your students' progress data available for export, but no refund will be owed.</p>
+<p><strong>No price changes.</strong> Founding plans will never be charged a renewal, upgrade, or maintenance fee for the features included at purchase. If we add materially new paid products in the future (for example, a separate assessment product), those may be priced separately.</p>
+<p><strong>Non-transferable.</strong> Founding plans are tied to the purchasing account and may not be sold, transferred, or assigned. A founding plan purchased by an individual educator belongs to that educator: if they change schools, the plan goes with them, and the school they leave has no claim to it. A plan purchased by a school, district, or other institution belongs to the institution and stays with it regardless of staff changes; the institution designates which of its staff administer the account.</p>
+<p><strong>Early-access features.</strong> Founding plans include early access to certain features or related products as described at the time of purchase (for example, early access to a screener tool). Early-access features are provided as previews, may change, and may eventually be released as part of the Service or as separate products. Early access means you'll see them before the general public; it doesn't guarantee they'll be free forever.</p>
+<p><strong>Founding refunds.</strong> Founding purchases may be refunded in full within <strong>14 days</strong> of purchase if you are not satisfied, for any reason. Email <a href="mailto:hello@mathfactexpedition.com">hello@mathfactexpedition.com</a>. After 14 days, founding purchases are final except as provided in the five-year guarantee above.</p>
+<hr />
+<h2>5. Acceptable use</h2>
+<p>You agree not to:</p>
+<ul>
+<li>Share your account, group code, or seats beyond the students you're entitled to add under your plan.</li>
+<li>Use the Service for any purpose other than math practice and progress monitoring for your students.</li>
+<li>Attempt to access another user's account, group, or data.</li>
+<li>Reverse engineer, scrape, copy, or create derivative works from the Service or its content, except as allowed by law.</li>
+<li>Upload malicious code, interfere with the Service's operation, or circumvent security or access controls.</li>
+<li>Use the Service in violation of any law, including student privacy laws applicable to you.</li>
+<li>Use automated tools to access the Service other than standard web browsers and assistive technologies.</li>
+<li>Resell, sublicense, or commercially exploit the Service or any part of it.</li>
+</ul>
+<p>We may suspend or terminate accounts that violate these Terms.</p>
+<hr />
+<h2>6. Educator and school responsibilities</h2>
+<p>If you use the Service as an educator or on behalf of a school:</p>
+<ul>
+<li>You are responsible for complying with your school's and district's policies on student data and third-party tools, and for obtaining any approvals your school requires.</li>
+<li>You represent that you are authorized to add each student to the Service and to consent to the collection of their information on the school's behalf, as described in our Privacy Policy.</li>
+<li>You will use the Service only for the educational benefit of your students.</li>
+<li>If your school requires a Data Privacy Agreement, contact us before adding students. We offer the Student Data Privacy Consortium's National Data Privacy Agreement as our standard form.</li>
+</ul>
+<hr />
+<h2>7. Our content and your data</h2>
+<p><strong>Our content.</strong> The Service, including its software, design, text, graphics, characters, sounds, and the Math Fact Expedition name and logo, is owned by Advant Education and protected by copyright, trademark, and other laws. We grant you a limited, non-exclusive, non-transferable, revocable license to use the Service for its intended purpose under these Terms. All other rights are reserved.</p>
+<p><strong>Printable materials.</strong> Some materials (progress reports, certificates, practice pages) may be downloaded or printed. You may use these with your own students. You may not sell them, redistribute them, or remove our name from them.</p>
+<p><strong>Your data.</strong> You own the information you provide. Student practice data generated through the Service is yours (or your school's) to review, export, and delete. We use it only to provide the Service as described in the Privacy Policy. We don't claim ownership of it and don't use it for anything else.</p>
+<p><strong>Aggregated data.</strong> We may use de-identified, aggregated data (for example, "students in grades 3–5 typically master ×7 facts after N sessions") to improve the Service and to describe it publicly. This data cannot be used to identify any individual student or adult, and we will not attempt to re-identify it.</p>
+<p><strong>Feedback.</strong> If you send us suggestions or feedback, we may use them without obligation to you.</p>
+<hr />
+<h2>8. Educational purpose; no guarantee of outcomes</h2>
+<p>Math Fact Expedition is a practice tool. It is not a substitute for classroom instruction, an intervention program, or an evaluation by a qualified educator. Progress reports and mastery indicators reflect practice activity within the Service and should be interpreted by the adult alongside other evidence.</p>
+<p>We make no guarantee that any student will achieve any particular level of fluency, grade, or score.</p>
+<hr />
+<h2>9. Availability, changes, and termination</h2>
+<p><strong>Availability.</strong> We work to keep the Service available, but it may be unavailable due to maintenance, updates, or events outside our control. We'll try to schedule planned maintenance at low-usage times.</p>
+<p><strong>Changes.</strong> We may add, change, or remove features. We won't remove core functionality (student practice, progress tracking) from a founding plan during the five-year guarantee period without offering a substantially equivalent replacement.</p>
+<p><strong>Termination by you.</strong> You may close your account at any time from the dashboard. Closing deletes your students' data on the schedule in the Privacy Policy. Closing does not entitle you to a refund except as stated in Sections 3 and 4.</p>
+<p><strong>Termination by us.</strong> We may suspend or close your account if you violate these Terms, if required by law, or if we discontinue the Service. If we close your account without cause during an active subscription, we'll refund the unused portion. If we discontinue the Service entirely, Section 4 governs founding plans.</p>
+<p><strong>Effect.</strong> On termination, your license to use the Service ends. Sections 7, 8, 10, 11, and 12 survive.</p>
+<hr />
+<h2>10. Disclaimers</h2>
+<p>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE." TO THE FULLEST EXTENT PERMITTED BY LAW, WE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT DATA WILL NEVER BE LOST. SOME STATES DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SOME OF THESE EXCLUSIONS MAY NOT APPLY TO YOU.</p>
+<hr />
+<h2>11. Limitation of liability</h2>
+<p>TO THE FULLEST EXTENT PERMITTED BY LAW, ADVANT EDUCATION AND ITS MEMBERS, MANAGERS, EMPLOYEES, AND CONTRACTORS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR LOSS OF DATA, PROFITS, OR GOODWILL, ARISING FROM YOUR USE OF THE SERVICE.</p>
+<p>OUR TOTAL LIABILITY FOR ANY CLAIM ARISING FROM THE SERVICE OR THESE TERMS WILL NOT EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID US IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR (B) ONE HUNDRED DOLLARS ($100).</p>
+<p>THESE LIMITS DO NOT APPLY TO LIABILITY THAT CANNOT BE LIMITED BY LAW, INCLUDING LIABILITY ARISING FROM OUR GROSS NEGLIGENCE OR WILLFUL MISCONDUCT, OR OUR OBLIGATIONS UNDER APPLICABLE STUDENT PRIVACY LAWS.</p>
+<hr />
+<h2>12. Governing law and disputes</h2>
+<p>These Terms are governed by the laws of the State of New Mexico, without regard to its conflict-of-laws rules.</p>
+<p><strong>Talk to us first.</strong> If you have a dispute with us, email <a href="mailto:hello@mathfactexpedition.com">hello@mathfactexpedition.com</a> and give us 30 days to try to resolve it informally. Most issues can be fixed this way.</p>
+<p><strong>Courts.</strong> Any dispute that can't be resolved informally will be brought in the state or federal courts located in Bernalillo County, New Mexico, and you consent to their jurisdiction.</p>
+<p><strong>Small claims.</strong> Either party may bring an individual claim in small claims court.</p>
+<hr />
+<h2>13. General terms</h2>
+<p><strong>Entire agreement.</strong> These Terms and the Privacy Policy are the entire agreement between you and us about the Service. Any Data Privacy Agreement we sign with a school supplements these Terms for that school and controls if there's a conflict.</p>
+<p><strong>Changes to these Terms.</strong> We may update these Terms. If a change is material, we'll email account holders at least 30 days before it takes effect. Continued use after the effective date means you accept the change. If you don't, close your account before the change takes effect; founding plan holders who close their account because of a material adverse change within the five-year guarantee period will receive a prorated refund of the guarantee period remaining.</p>
+<p><strong>Assignment.</strong> You may not assign these Terms. We may assign them in connection with a merger, acquisition, or sale of assets, and the successor will honor founding plan guarantees.</p>
+<p><strong>Severability.</strong> If any part of these Terms is unenforceable, the rest remains in effect.</p>
+<p><strong>No waiver.</strong> Our failure to enforce a provision isn't a waiver of it.</p>
+<p><strong>Force majeure.</strong> We aren't liable for delays or failures caused by events outside our reasonable control.</p>
+<p><strong>Notices.</strong> We'll send notices to the email on your account. Send notices to us at <a href="mailto:hello@mathfactexpedition.com">hello@mathfactexpedition.com</a> or the address below.</p>
+<hr />
+<h2>14. Contact</h2>
+<p>Advant Education LLC
+d/b/a Math Fact Expedition
+1209 Mountain Road Pl NE #8063
+Albuquerque, NM 87110
+<a href="mailto:hello@mathfactexpedition.com">hello@mathfactexpedition.com</a>
+(505) 481-3077</p>
+    <div class="related">See also our <a href="/privacy.html">Privacy Policy</a>.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-brand">Math Fact Expedition</div>
+        <div class="footer-tag">A product of Advant Education</div>
+      </div>
+      <div class="footer-links">
+        <a href="/#how">How it works</a>
+        <a href="/#pricing">Pricing</a>
+        <a href="/#faq">FAQ</a>
+        <a href="mailto:hello@mathfactexpedition.com">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Advant Education. All rights reserved.</span>
+      <span>Made in New Mexico · <a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
